@@ -1,0 +1,213 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Cool Pink Palette - no peach tones */
+  --background: #ffffff;
+  --foreground: #1a1a2e;
+  
+  --card: #ffffff;
+  --card-foreground: #1a1a2e;
+  
+  --popover: #ffffff;
+  --popover-foreground: #1a1a2e;
+  
+  /* Vibrant Pink Primary #FA5DBE */
+  --primary: #FA5DBE;
+  --primary-foreground: #ffffff;
+  
+  /* Cool Soft Pink Secondary - no warm undertones */
+  --secondary: #FCE4F6;
+  --secondary-foreground: #1a1a2e;
+  
+  /* Muted cool pink */
+  --muted: #FDF2FA;
+  --muted-foreground: #64607d;
+  
+  /* Accent - cool pink */
+  --accent: #FCE4F6;
+  --accent-foreground: #1a1a2e;
+  
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  
+  --border: #F9D0EC;
+  --input: #FDF2FA;
+  --ring: #FA5DBE;
+  
+  /* Chart colors - cool pinks */
+  --chart-1: #FA5DBE;
+  --chart-2: #F78FCB;
+  --chart-3: #F5B3DA;
+  --chart-4: #FCE4F6;
+  --chart-5: #FDF2FA;
+  
+  --radius: 0.75rem;
+  
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1a1a2e;
+  --sidebar-primary: #FA5DBE;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #FCE4F6;
+  --sidebar-accent-foreground: #1a1a2e;
+  --sidebar-border: #F9D0EC;
+  --sidebar-ring: #FA5DBE;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), 'Georgia', serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Custom colors - cool pinks, no peach */
+  --color-soft-pink: #FCE4F6;
+  --color-vibrant-pink: #FA5DBE;
+  --color-pink-100: #FDF2FA;
+  --color-pink-200: #FCE4F6;
+  --color-pink-300: #F9D0EC;
+  --color-pink-400: #F78FCB;
+  --color-pink-500: #FA5DBE;
+  --color-pink-600: #E84AAD;
+  --color-dark: #1a1a2e;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply bg-background;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDF2FA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FA5DBE;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E84AAD;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-pink {
+  background: rgba(252, 228, 246, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Gradient backgrounds */
+.gradient-pink {
+  background: linear-gradient(135deg, #FCE4F6 0%, #ffffff 50%, #FDF2FA 100%);
+}
+
+.gradient-vibrant {
+  background: linear-gradient(135deg, #FA5DBE 0%, #FF8AD0 100%);
+}
+
+.gradient-hero {
+  background: linear-gradient(180deg, rgba(252, 228, 246, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%);
+}
+
+/* Animation utilities */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 4s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 3s ease-in-out infinite;
+  background: linear-gradient(90deg, transparent 0%, rgba(250, 93, 190, 0.1) 50%, transparent 100%);
+  background-size: 200% 100%;
+}
