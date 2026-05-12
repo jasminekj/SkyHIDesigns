@@ -9,7 +9,7 @@ const testimonials = [
     name: "Sarah Mitchell",
     business: "Bloom Beauty Studio",
     role: "Owner",
-    content: "Working with Sky HI Design was an absolute dream. My new website not only looks stunning but has completely transformed my business. Bookings have increased by over 250% since launch!",
+    content: "Working with Sky HI Designs was an absolute dream. My new website not only looks stunning but has completely transformed my business. Bookings have increased by over 250% since launch!",
     rating: 5,
     image: "SM"
   },
@@ -41,7 +41,7 @@ const testimonials = [
     name: "Amanda Foster",
     business: "Grace Interiors",
     role: "Creative Director",
-    content: "The transformation of our website was incredible. Sky HI Design took our outdated site and turned it into a modern, elegant showcase that truly represents our design philosophy.",
+    content: "The transformation of our website was incredible. Sky HI Designs took our outdated site and turned it into a modern, elegant showcase that truly represents our design philosophy.",
     rating: 5,
     image: "AF"
   }

@@ -111,7 +111,7 @@ export function Footer() {
         <div className="mt-16 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-white/60">
-              © {new Date().getFullYear()} Sky HI Design. All rights reserved.
+              © {new Date().getFullYear()} Sky HI Designs. All rights reserved.
             </p>
             <p className="text-sm text-white/60 flex items-center gap-1">
               Crafted with <Heart className="w-4 h-4 text-[#FA5DBE] fill-[#FA5DBE]" /> for businesses that dream big

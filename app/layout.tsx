@@ -15,7 +15,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Sky HI Design | Custom Web Design & SEO Agency in Toronto',
+  title: 'Sky HI Designs | Custom Web Designs & SEO Agency in Toronto',
   
   description:
     'Luxury custom websites, WordPress development, SEO optimization, branding, and digital experiences crafted to help businesses grow online in Toronto and the GTA.',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Sky HI Design' }],
 
   openGraph: {
-    title: 'Sky HI Design | Custom Web Design & SEO Agency in Toronto',
+    title: 'Sky HI Designs | Custom Web Design & SEO Agency in Toronto',
 
     description:
       'Luxury custom websites and SEO-focused digital experiences designed to elevate your brand and grow your business.',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 
     url: 'https://www.skyhidesigns.com',
 
-    siteName: 'Sky HI Design',
+    siteName: 'Sky HI Designs',
   },
 
   metadataBase: new URL('https://www.skyhidesigns.com'),

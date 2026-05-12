@@ -68,7 +68,7 @@ export function WhyChoose() {
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#FFD6EE]">
               <Sparkles className="w-4 h-4 text-[#FA5DBE]" />
-              <span className="text-sm font-medium text-[#FA5DBE]">Why Sky HI Design</span>
+              <span className="text-sm font-medium text-[#FA5DBE]">Why Sky HI Designs</span>
             </div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight text-[#1a1a2e] text-balance">
@@ -77,7 +77,7 @@ export function WhyChoose() {
             
             <p className="text-lg text-[#64607d] leading-relaxed">
               Choosing the right web designer is crucial for your business success. 
-              Here&apos;s what sets Sky HI Design apart and why clients choose to work with me.
+              Here&apos;s what sets Sky HI Designs apart and why clients choose to work with me.
             </p>
 
             {/* Highlight card */}

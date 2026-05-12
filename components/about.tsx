@@ -39,7 +39,7 @@ export function About() {
               <Sparkles className="h-4 w-4 text-[#FA5DBE]" />
 
               <span className="text-sm font-medium text-[#FA5DBE]">
-                About Sky HI Design
+                About Sky HI Designs
               </span>
             </div>
 
@@ -50,7 +50,7 @@ export function About() {
 
             <div className="space-y-6 leading-relaxed text-[#64607d]">
               <p className="text-lg">
-                Sky HI Design is a boutique web design and SEO-focused creative
+                Sky HI Designs is a boutique web design and SEO-focused creative
                 studio dedicated to helping businesses establish a stunning
                 online presence. I specialize in creating custom-coded websites
                 and solutions that are as beautiful as they are
