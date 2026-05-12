@@ -10,7 +10,7 @@ export async function POST(req: Request) {
     const { name, email, message } = body
 
     const data = await resend.emails.send({
-      from: "Sky HI Design <hello@skyhidesigns.com>",
+      from: "Sky HI Designs <hello@skyhidesigns.com>",
       to: "skyhidesignsinfo@gmail.com",
       replyTo: email,
       subject: `New Website Inquiry from ${name}`,

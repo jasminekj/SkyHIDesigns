@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     'small business websites',
   ],
 
-  authors: [{ name: 'Sky HI Design' }],
+  authors: [{ name: 'Sky HI Designs' }],
 
   openGraph: {
     title: 'Sky HI Designs | Custom Web Design & SEO Agency in Toronto',

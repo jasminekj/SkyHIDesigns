@@ -42,7 +42,7 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <span className="text-2xl md:text-3xl font-serif font-semibold tracking-tight text-[#1a1a2e]">
-              Sky <span className="text-[#FA5DBE]">HI</span> Design
+              Sky <span className="text-[#FA5DBE]">HI</span> Designs
             </span>
           </Link>
 
